@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // Enable CORS for frontend
   app.enableCors({
-  origin: ['http://localhost:3000'],
+  origin: ['https://next-blog-rust-alpha.vercel.app'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
   credentials: true,
 });
