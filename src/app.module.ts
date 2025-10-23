@@ -19,9 +19,7 @@ import { ConfigModule } from '@nestjs/config';
       // database: process.env.DATABASE_NAME || 'blog_db',
       entities: [User, Post],
       synchronize: true,
-      ssl: {
-        rejectUnauthorized: false, // Required for Supabase external connections
-      },
+      
     }),
     UsersModule,
     AuthModule,
