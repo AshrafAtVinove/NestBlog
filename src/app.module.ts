@@ -10,7 +10,7 @@ import { Post } from './posts/post.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: 'postgresql://postgres:%26g8kqkzC_A%23Gr.L@db.tegsilryifjtykuunbow.supabase.co:5432/postgres',
+      url: process.env.DATABASE_URL,
       // host: process.env.DATABASE_HOST || 'localhost',
       // port: +(process.env.DATABASE_PORT || 5432),
       // username: process.env.DATABASE_USER || 'postgres',
