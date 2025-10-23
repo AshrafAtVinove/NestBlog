@@ -18,6 +18,9 @@ import { Post } from './posts/post.entity';
       // database: process.env.DATABASE_NAME || 'blog_db',
       entities: [User, Post],
       synchronize: true,
+      ssl: {
+        rejectUnauthorized: false, // Required for Supabase external connections
+      },
     }),
     UsersModule,
     AuthModule,
